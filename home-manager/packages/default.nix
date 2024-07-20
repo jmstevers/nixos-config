@@ -8,6 +8,7 @@
         zsh-powerlevel10k
         zsh-autocomplete
         zsh-syntax-highlighting
+        vscode-extensions
 
         latte-dock
     ];
