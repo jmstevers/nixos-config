@@ -2,7 +2,6 @@
     home.packages = with pkgs; [
         google-chrome
         vesktop
-        godot_4
         obsidian
 
         fira-code
