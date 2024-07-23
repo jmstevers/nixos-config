@@ -2,11 +2,11 @@
     imports = [
         ./catppuccin.nix
         ./git.nix
-        ./foot.nix
         ./home-manager.nix
         ./vscode.nix
         ./nushell
         ./starship.nix
+        ./wezterm
     ];
 
     home.packages = with pkgs; [
