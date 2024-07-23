@@ -5,7 +5,7 @@
         ./foot.nix
         ./home-manager.nix
         ./vscode.nix
-        ./nushell.nix
+        ./nushell
         ./starship.nix
     ];
 
