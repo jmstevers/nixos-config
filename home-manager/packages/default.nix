@@ -2,7 +2,6 @@
     home.packages = with pkgs; [
         google-chrome
         vesktop
-        obsidian
 
         fira-code
         zsh-powerlevel10k
