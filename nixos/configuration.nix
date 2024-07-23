@@ -35,15 +35,13 @@
 
   networking.hostName = "nixos";
 
+  programs.nushell.enable = true;
+  users.defaultUserShell = pkgs.nushell;
+
   users.users.jmstevers = {
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel"];
-    shell = pkgs.zsh;
   };
-
-  programs.zsh.enable = true;
-  users.defaultUserShell = pkgs.zsh;
-  environment.shells = [ pkgs.zsh ];
 
   home-manager = {
     extraSpecialArgs = { inherit inputs outputs; };

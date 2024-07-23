@@ -5,7 +5,6 @@
         ./foot.nix
         ./home-manager.nix
         ./vscode.nix
-        ./zsh.nix
     ];
 
     home.packages = with pkgs; [
