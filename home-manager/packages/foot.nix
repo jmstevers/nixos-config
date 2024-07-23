@@ -3,6 +3,7 @@
         enable = true;
         settings = {
             main = {
+                shell = "nu";
                 term = "xterm-256color";
                 font = "Fira Code:size=12";
             };
