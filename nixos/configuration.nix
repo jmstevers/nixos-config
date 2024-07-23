@@ -35,9 +35,6 @@
 
   networking.hostName = "nixos";
 
-  programs.nushell.enable = true;
-  users.defaultUserShell = pkgs.nushell;
-
   users.users.jmstevers = {
     isNormalUser = true;
     extraGroups = ["networkmanager" "wheel"];
