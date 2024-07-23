@@ -5,6 +5,8 @@
         ./foot.nix
         ./home-manager.nix
         ./vscode.nix
+        ./nushell.nix
+        ./starship.nix
     ];
 
     home.packages = with pkgs; [
