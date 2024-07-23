@@ -3,6 +3,7 @@
         enable = true;
         settings = {
             palette = "catppuccin_macchiato";
+            directory.style = "mauve";
             palettes.catppuccin_macchiato = {
                 rosewater = "#f4dbd6";
                 flamingo = "#f0c6c6";
