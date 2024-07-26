@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs,... }: {
     imports = [
         ./catppuccin.nix
         ./git.nix
@@ -13,6 +13,9 @@
         google-chrome
         vesktop
 
+        vulkan-tools
+        gamemode
+        
         fira-code
         zsh-powerlevel10k
         zsh-autocomplete
