@@ -11,12 +11,7 @@
         inputs.home-manager.nixosModules.home-manager
     ];
 
-    nixpkgs = {
-        overlays = [];
-        config = {
-            allowUnfree = true;
-        };
-    };
+    nixpkgs.config.allowUnfree = true;
 
     nix = let
         flakeInputs = lib.filterAttrs (_: lib.isType "flake") inputs;
@@ -32,8 +27,6 @@
         registry = lib.mapAttrs (_: flake: {inherit flake;}) flakeInputs;
         nixPath = lib.mapAttrsToList (n: _: "${n}=flake:${n}") flakeInputs;
     };
-
-    networking.hostName = "nixos";
 
     users.users.jmstevers = {
         isNormalUser = true;
@@ -51,6 +44,7 @@
     boot.loader.efi.canTouchEfiVariables = true;
 
     networking.networkmanager.enable = true;
+    networking.hostName = "nixos";
 
     time.timeZone = "America/Chicago";
 
