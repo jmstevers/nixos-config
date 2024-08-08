@@ -82,4 +82,8 @@
     services.displayManager.sddm.wayland.enable = true;
 
     programs.steam.enable = true;
+    programs.gamescope = {
+        enable = true;
+        capSysNice = true;
+    };
 }
