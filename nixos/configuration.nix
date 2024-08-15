@@ -38,7 +38,7 @@
         users.jmstevers = import ../home-manager/home.nix;
     };
 
-    system.stateVersion = "24.05";
+    system.stateVersion = "24.11";
 
     boot.kernelPackages = pkgs.linuxPackages_latest;
     boot.loader.systemd-boot.enable = true;
