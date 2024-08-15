@@ -1,14 +1,14 @@
 { pkgs, ... }:
 {
   imports = [
+    ./nushell
     ./vscode
+    ./wezterm
     ./catppuccin.nix
+    ./direnv.nix
     ./git.nix
     ./home-manager.nix
-    ./vscode.nix
-    ./nushell
     ./starship.nix
-    ./wezterm
   ];
 
   home.packages = with pkgs; [
