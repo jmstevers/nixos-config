@@ -19,6 +19,7 @@
 
     fira-code
     nixfmt-rfc-style
+    nil
 
     latte-dock
   ];
