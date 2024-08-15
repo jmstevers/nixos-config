@@ -17,6 +17,7 @@
         gamemode
         
         fira-code
+        nixfmt-rfc-style
 
         latte-dock
     ];
