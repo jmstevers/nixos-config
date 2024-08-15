@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
+    ./vscode
     ./catppuccin.nix
     ./git.nix
     ./home-manager.nix
