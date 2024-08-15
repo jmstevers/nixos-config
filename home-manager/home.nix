@@ -1,28 +1,27 @@
 {
-    inputs,
-    lib,
-    config,
-    pkgs,
-    ...
-}: {
-    imports = [
-        ./packages
-    ];
+  inputs,
+  lib,
+  config,
+  pkgs,
+  ...
+}:
+{
+  imports = [ ./packages ];
 
-    nixpkgs = {
-        overlays = [];
-        config = {
-            allowUnfree = true;
-            allowUnfreePredicate = _: true;
-        };
+  nixpkgs = {
+    overlays = [ ];
+    config = {
+      allowUnfree = true;
+      allowUnfreePredicate = _: true;
     };
+  };
 
-    home = {
-        username = "jmstevers";
-        homeDirectory = "/home/jmstevers";
-    };
+  home = {
+    username = "jmstevers";
+    homeDirectory = "/home/jmstevers";
+  };
 
-    systemd.user.startServices = "sd-switch";
+  systemd.user.startServices = "sd-switch";
 
-    home.stateVersion = "24.11";
+  home.stateVersion = "24.11";
 }
