@@ -17,9 +17,6 @@
         gamemode
         
         fira-code
-        zsh-powerlevel10k
-        zsh-autocomplete
-        zsh-syntax-highlighting
 
         latte-dock
     ];
