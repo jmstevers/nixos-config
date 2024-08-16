@@ -5,7 +5,6 @@
     ./vscode
     ./wezterm
     ./catppuccin.nix
-    ./direnv.nix
     ./git.nix
     ./home-manager.nix
     ./starship.nix
@@ -15,9 +14,7 @@
     google-chrome
     vesktop
 
-    vulkan-tools
-    gamemode
-
+    fira
     fira-code
     nixfmt-rfc-style
     nil
