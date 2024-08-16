@@ -10,7 +10,12 @@
   };
 
   outputs =
-    { self, nixpkgs, ... }@inputs:
+    {
+      self,
+      nixpkgs,
+      catppuccin,
+      ...
+    }@inputs:
     let
       inherit (self) outputs;
     in
@@ -20,7 +25,7 @@
           inherit inputs outputs;
         };
         modules = [
-          inputs.catppuccin.nixosModules.catppuccin
+          catppuccin.nixosModules.catppuccin
           ./configuration.nix
         ];
       };
