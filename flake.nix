@@ -6,7 +6,6 @@
       inputs.nixpkgs.follows = "nixpkgs";
 
     };
-
     catppuccin.url = "github:catppuccin/nix";
   };
 
@@ -22,7 +21,7 @@
         };
         modules = [
           inputs.catppuccin.nixosModules.catppuccin
-          ./nixos/configuration.nix
+          ./configuration.nix
         ];
       };
     };
