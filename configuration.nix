@@ -44,7 +44,7 @@
       inherit inputs outputs;
     };
     backupFileExtension = "backup";
-    users.jmstevers = import ../home.nix;
+    users.jmstevers = import ./home.nix;
   };
 
   system.stateVersion = "24.11";
