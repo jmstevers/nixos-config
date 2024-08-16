@@ -1,7 +1,12 @@
 {
   inputs = {
     nixpkgs.url = "nixpkgs/nixos-unstable";
-    home-manager.url = "github:nix-community/home-manager";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+
+    };
+
     catppuccin.url = "github:catppuccin/nix";
   };
 
