@@ -8,6 +8,7 @@
     ./git.nix
     ./home-manager.nix
     ./starship.nix
+    ./direnv.nix
   ];
 
   home.packages = with pkgs; [
