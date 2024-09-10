@@ -3,6 +3,8 @@
   lib,
   config,
   pkgs,
+  name,
+  stateVersion,
   ...
 }:
 {
@@ -14,11 +16,11 @@
   };
 
   home = {
-    username = "jmstevers";
-    homeDirectory = "/home/jmstevers";
+    username = name;
+    homeDirectory = "/home/${name}";
   };
 
   systemd.user.startServices = "sd-switch";
 
-  home.stateVersion = "24.11";
+  home.stateVersion = stateVersion;
 }

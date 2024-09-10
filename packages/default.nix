@@ -1,23 +1,25 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 {
   imports = [
     ./nushell
     ./vscode
     ./wezterm
     ./catppuccin.nix
-    ./direnv.nix
     ./git.nix
     ./home-manager.nix
     ./starship.nix
   ];
 
   home.packages = with pkgs; [
-    google-chrome
+    inputs.zen-browser.packages."x86_64-linux".generic
     vesktop
+    prismlauncher
 
     fira
     fira-code
     nixfmt-rfc-style
     nil
+
+    blender-hip
   ];
 }
