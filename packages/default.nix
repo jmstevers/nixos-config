@@ -1,24 +1,32 @@
-{ pkgs, inputs, ... }:
+{
+  pkgs,
+  inputs,
+  system,
+  ...
+}:
 {
   imports = [
-    ./nushell
-    ./vscode
-    ./wezterm
+    ./audio.nix
     ./catppuccin.nix
+    ./desktop.nix
+    ./flatpak.nix
+    ./foot.nix
+    ./gamemode.nix
     ./git.nix
-    ./home-manager.nix
+    ./networking.nix
+    ./nushell.nix
     ./starship.nix
+    ./steam.nix
   ];
 
-  home.packages = with pkgs; [
-    inputs.zen-browser.packages."x86_64-linux".generic
+  environment.systemPackages = with pkgs; [
+    inputs.zen-browser.packages.${system}.generic
     vesktop
     prismlauncher
 
-    fira
-    fira-code
     nixfmt-rfc-style
     nil
+    vscode
 
     blender-hip
   ];
