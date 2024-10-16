@@ -15,6 +15,7 @@
     ./git.nix
     ./networking.nix
     ./nushell.nix
+    ./powermanagement.nix
     ./starship.nix
     ./steam.nix
   ];
@@ -23,11 +24,10 @@
     inputs.zen-browser.packages.${system}.generic
     vesktop
     prismlauncher
-
+    xivlauncher
     nixfmt-rfc-style
     nil
     vscode
-
     blender-hip
   ];
 }

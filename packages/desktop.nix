@@ -1,18 +1,7 @@
-{ name, ... }:
 {
-  services = {
-    displayManager = {
-      sddm = {
-        enable = true;
-        wayland.enable = true;
-      };
-      autoLogin = {
-        enable = true;
-        user = name;
-      };
-    };
-    desktopManager.plasma6.enable = true;
+  services.xserver = {
+    enable = true;
+    displayManager.gdm.enable = true;
+    desktopManager.gnome.enable = true;
   };
-
-  xdg.portal.enable = true;
 }
