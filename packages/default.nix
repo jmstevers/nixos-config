@@ -25,6 +25,7 @@
     vesktop
     prismlauncher
     xivlauncher
+    lutris
     nixfmt-rfc-style
     nil
     vscode
