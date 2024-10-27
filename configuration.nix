@@ -4,7 +4,6 @@
   lib,
   config,
   pkgs,
-  system,
   name,
   stateVersion,
   ...
