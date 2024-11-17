@@ -17,7 +17,10 @@
     auto-optimise-store = true;
   };
 
-  users.users.${name}.isNormalUser = true;
+  users.users.${name} = {
+    isNormalUser = true;
+    extraGroups = [ "wheel" ];
+  };
 
   time.timeZone = "America/Chicago";
 
