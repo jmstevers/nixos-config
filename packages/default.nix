@@ -15,7 +15,6 @@
     ./git.nix
     ./nushell.nix
     ./steam.nix
-    ./tmux.nix
   ];
 
   environment.systemPackages = with pkgs; [
