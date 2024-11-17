@@ -24,12 +24,8 @@
   environment.systemPackages = with pkgs; [
     inputs.zen-browser.packages.${system}.specific
     vesktop
-    prismlauncher
-    xivlauncher
-    lutris
     nixfmt-rfc-style
     nil
     vscode
-    blender-hip
   ];
 }
