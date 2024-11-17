@@ -22,7 +22,7 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    inputs.zen-browser.packages.${system}.generic
+    inputs.zen-browser.packages.${system}.specific
     vesktop
     prismlauncher
     xivlauncher
