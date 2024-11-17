@@ -10,6 +10,7 @@
     ./catppuccin.nix
     ./desktop.nix
     ./flatpak.nix
+    ./fonts.nix
     ./foot.nix
     ./gamemode.nix
     ./git.nix
