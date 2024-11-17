@@ -12,12 +12,8 @@
     ./flatpak.nix
     ./fonts.nix
     ./foot.nix
-    ./gamemode.nix
     ./git.nix
-    ./networking.nix
     ./nushell.nix
-    ./powermanagement.nix
-    ./starship.nix
     ./steam.nix
   ];
 

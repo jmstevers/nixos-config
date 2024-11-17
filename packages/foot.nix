@@ -5,8 +5,6 @@
     enableBashIntegration = false;
     enableZshIntegration = false;
     enableFishIntegration = false;
-    settings.main = {
-      font = "monospace:size=12";
-    };
+    settings.main.font = "monospace:size=12";
   };
 }
