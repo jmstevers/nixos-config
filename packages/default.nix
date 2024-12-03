@@ -23,5 +23,7 @@
     nixfmt-rfc-style
     nil
     vscode
+    prismlauncher
+    blender-hip
   ];
 }

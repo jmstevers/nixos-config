@@ -4,8 +4,9 @@
     variables = {
       SHELL = "/run/current-system/sw/bin/nu";
     };
-    systemPackages = with pkgs; [
-      nushell
+
+    systemPackages = [
+      pkgs.nushell
     ];
   };
 

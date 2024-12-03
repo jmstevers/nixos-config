@@ -17,7 +17,7 @@
       inherit (self) outputs;
       system = "x86_64-linux";
       name = "jmstevers";
-      stateVersion = "24.11";
+      stateVersion = "25.05";
     in
     {
       nixosConfigurations.${name} = nixpkgs.lib.nixosSystem {
@@ -30,6 +30,7 @@
             stateVersion
             ;
         };
+
         modules = [
           catppuccin.nixosModules.catppuccin
           ./configuration.nix
