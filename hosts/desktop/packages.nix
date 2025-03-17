@@ -1,0 +1,22 @@
+{
+  imports = [
+    ../../packages/audio.nix
+    ../../packages/catppuccin.nix
+    ../../packages/docker.nix
+    ../../packages/easyeffects.nix
+    ../../packages/flatpak.nix
+    ../../packages/fonts.nix
+    ../../packages/gamemode.nix
+    ../../packages/ghostty.nix
+    ../../packages/git.nix
+    ../../packages/gnome.nix
+    ../../packages/nil.nix
+    ../../packages/nixfmt.nix
+    ../../packages/nushell.nix
+    ../../packages/steam.nix
+    ../../packages/vesktop.nix
+    ../../packages/vscode.nix
+    ../../packages/zed.nix
+    ../../packages/zen.nix
+  ];
+}

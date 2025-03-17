@@ -7,7 +7,7 @@
 {
   imports = [
     ./hardware-configuration.nix
-    ./packages
+    ./packages.nix
   ];
 
   nixpkgs.config.allowUnfree = true;
@@ -19,7 +19,11 @@
 
   users.users.${name} = {
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [
+      "wheel"
+      "gamemode"
+      "docker"
+    ];
   };
 
   time.timeZone = "America/Chicago";
@@ -34,4 +38,5 @@
   hardware.graphics.enable = true;
 
   environment.variables.XDG_CONFIG_HOME = "/home/${name}/.config";
+  security.pam.services.gdm.enableGnomeKeyring = true;
 }
