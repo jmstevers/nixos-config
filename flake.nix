@@ -3,6 +3,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     catppuccin.url = "github:catppuccin/nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    musnix.url = "github:musnix/musnix";
   };
 
   outputs =
@@ -14,7 +15,6 @@
     let
       inherit (self) outputs;
       name = "jmstevers";
-      stateVersion = "25.05";
     in
     {
       nixosConfigurations.${name} = nixpkgs.lib.nixosSystem {
@@ -23,12 +23,12 @@
             inputs
             outputs
             name
-            stateVersion
             ;
         };
 
         modules = [
           inputs.catppuccin.nixosModules.catppuccin
+          inputs.musnix.nixosModules.musnix
           ./configuration.nix
         ];
       };
