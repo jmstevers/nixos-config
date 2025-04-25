@@ -3,7 +3,6 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     catppuccin.url = "github:catppuccin/nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    musnix.url = "github:musnix/musnix";
   };
 
   outputs =
@@ -28,7 +27,6 @@
 
         modules = [
           inputs.catppuccin.nixosModules.catppuccin
-          inputs.musnix.nixosModules.musnix
           ./configuration.nix
         ];
       };

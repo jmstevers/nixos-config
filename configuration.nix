@@ -22,7 +22,6 @@
     extraGroups = [
       "wheel"
       "gamemode"
-      "docker"
     ];
   };
 
@@ -32,14 +31,10 @@
 
   boot.loader.systemd-boot.enable = true;
 
-  hardware = {
-    graphics.enable = true;
-    opentabletdriver.enable = true;
-  };
+  hardware.graphics.enable = true;
 
   environment = {
     systemPackages = with pkgs; [
-      blender-hip
       easyeffects
       ghostty
       nil
@@ -48,7 +43,7 @@
       vesktop
       vscode
       inputs.zen-browser.packages.${hostPlatform.system}.twilight
-      reaper
+      prismlauncher
     ];
     variables = {
       XDG_CONFIG_HOME = "/home/${name}/.config";
@@ -112,8 +107,6 @@
 
   security.rtkit.enable = true;
 
-  virtualisation.docker.enable = true;
-
   fonts.packages = with pkgs; [
     fira-code
     fira-code-symbols
@@ -123,13 +116,5 @@
     enable = true;
     accent = "mauve";
     flavor = "macchiato";
-  };
-
-  musnix = {
-    enable = true;
-    kernel = {
-      packages = pkgs.linuxPackages_latest_rt;
-      realtime = true;
-    };
   };
 }
